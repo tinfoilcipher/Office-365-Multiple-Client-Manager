@@ -1,6 +1,6 @@
 Office 365 Multiple Client Manager - 2017 tinfoilcipher
 
-OUTLINE
+OUTLINE</br>
 The intention of this script is for sysadmins who manage several clients in Office 365 and to save the hassle of creating
 manual connections to each tenancy every time a session is required.
 
