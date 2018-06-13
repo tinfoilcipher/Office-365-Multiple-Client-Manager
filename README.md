@@ -4,12 +4,8 @@ OUTLINE
 The intention of this script is for sysadmins who manage several clients in Office 365 and to save the hassle of creating
 manual connections to each tenancy every time a session is required.
 
-The script reads data from a csv file which must be saved as lookuptable.csv and formatted as:
-
+The script reads data from a csv file which must be saved as lookuptable.csv with the headings
 cryptstring,CompanyName,username,Selection
-128fh03nfl,contoso,admin@contoso.com,0
-rf28943fn4,interslice,admin@interslice.co.uk,1
-3223f2393,canonical,root@canonical.com,2
 
 The values are as follows:
 cryptstring: A PowerShell SecureString encrypted value generated from the password used to connect the session
