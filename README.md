@@ -18,11 +18,16 @@ The values are as follows:
 -Selection: An integer from 0-X (depending on the amount of clients you have)
 
 ---GENERATING SECURE STRINGS---
-Included in a short script "encrypted_string_generation.ps1" which, when run, will generate a text file containing an encrypted string generated against the password being used for connection. Since the strings are being encrypted with the -Key option the output can be moved between workstations and/or over a network.
+Included in a short script "encrypted_string_generation.ps1" which, when run, will generate a text file containing an encrypted
+string generated against the password being used for connection. Since the strings are being encrypted with the -Key option the
+output can be moved between workstations and/or over a network.
 
 ---USE---
-Run "365Manager.ps1" and you will be prompted with a menu of 0 -X (depending on your configuration) and asked to enter the corresponding input for the client in question. Attempts to enter outside of range will cause an error routine.
+Run "365Manager.ps1" and you will be prompted with a menu of 0 -X (depending on your configuration) and asked to enter the
+corresponding input for the client in question. Attempts to enter outside of range will cause an error routine.
 
-After entering the relevant credentials will be pulled from the lookup table and you will be prompted for a session type to initiate which triggers one or all of the functions to connect to Exchange Online, Skype Online or AzureAD. Entering outside of range will cause an error to be thrown.
+After entering the relevant credentials will be pulled from the lookup table and you will be prompted for a session type to
+initiate which triggers one or all of the functions to connect to Exchange Online, Skype Online or AzureAD. Entering outside of
+range will cause an error to be thrown.
 
 Should a client not have any of these shells, a generic error will be thrown.
