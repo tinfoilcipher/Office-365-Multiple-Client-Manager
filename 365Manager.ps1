@@ -7,13 +7,14 @@ $strLookupTable = Import-CSV lookuptable.csv
 
 #Functions
 function Connect-Exchange {
-	$365session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $strCredential -Authentication Basic -AllowRedirection
-	Import-PSSession $365session
+	$365Esession = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $strCredential -Authentication Basic -AllowRedirection
+	Import-PSSession $365Esession
 }
 
 function Connect-Skype {
-	Import-Module MSOnline
-	Connect-MsolService -Credential $strCredential
+	Import-Module LyncOnlineConnector
+	$365Lsession = New-CsOnlineSession -Credential $userCredential
+        Import-PSSession $365Lsession
 }
 function Connect-MSOL{
 	Import-Module MSOnline
