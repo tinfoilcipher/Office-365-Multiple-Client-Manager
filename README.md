@@ -8,10 +8,14 @@ The script reads data from a csv file which must be saved as lookuptable.csv wit
 cryptstring,CompanyName,username,Selection</br>
 </br>
 The values are as follows:</br>
-cryptstring: A PowerShell SecureString encrypted value generated from the password used to connect the session
-CompanyName: A human readable field to display the name of the client you are connecting to
-username: The username that corresponds to the passwords that the cryptstring SecureString was generated from
+cryptstring: A PowerShell SecureString encrypted value generated from the password used to connect the session</br>
+CompanyName: A human readable field to display the name of the client you are connecting to</br>
+username: The username that corresponds to the passwords that the cryptstring SecureString was generated from</br>
 Selection: An integer from 0-X (depending on the amount of clients you have)</br>
+</br>
+PREREQUISITES</br>
+Powershell v2 or higher</br>
+Modules for import for MSOL, LyncOnline</br>
 </br>
 GENERATING SECURE STRINGS</br>
 Included in a short script "encrypted_string_generation.ps1" which, when run, will generate a text file containing an encrypted
