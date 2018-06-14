@@ -23,6 +23,7 @@ function Connect-MSOL{
 
 
 #Select Client
+Clear-Host
 Foreach ($strLookup in $strLookuptable) {
 	Write-Host ($strLookup.Selection + " - " + $strLookup.CompanyName)
 }
