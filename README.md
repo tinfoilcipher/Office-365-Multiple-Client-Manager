@@ -20,7 +20,7 @@ The values explainations are as follows:</br>
 2. **CompanyName**: A human readable field to display the name of the client you are connecting to</br>
 3. **username**: The username that corresponds to the passwords that the cryptstring SecureString was generated from</br>
 4. **Selection**: An integer from 0-X (depending on the amount of clients you have)</br>
-</br>
+
 ## PREREQUISITES</br>
 Powershell v2 or higher</br>
 Modules for import for MSOL, LyncOnline</br>
