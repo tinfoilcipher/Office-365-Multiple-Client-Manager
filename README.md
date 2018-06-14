@@ -11,7 +11,7 @@ The script reads data from a csv file which must be saved as lookuptable.csv and
 |----------------------------|---------------|--------------------------------------|-----------| 
 | d12e01d21dn01-==1          | fakecompany   | administrator@fakeco.net             | 0         | 
 | 3r0nd01n2dnwefn12          | scripthaus    | superuser@script-haus.org            | 1         | 
-| dmf0923hdf923d2d=          | jam_merchants | admin:stickymess.com                 | 2         | 
+| dmf0923hdf923d2d=          | jam_merchants | admin@stickymess.com                 | 2         | 
 | fm9032fh081fv3cfo          | those-guys    | root@those-guys-have-two-domains.com | 3         | 
 | 193d243f0241fvreg24rf3f43f | th1sw0rkstoo  | admin@th1sw0rkstoo.net               | 4         | 
 
