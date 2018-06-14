@@ -13,14 +13,13 @@ function Connect-Exchange {
 
 function Connect-Skype {
 	Import-Module LyncOnlineConnector
-	$365Lsession = New-CsOnlineSession -Credential $userCredential
-        Import-PSSession $365Lsession
+	$365Lsession = New-CsOnlineSession -Credential $strCredential
+	Import-PSSession $365Lsession
 }
 function Connect-MSOL{
 	Import-Module MSOnline
 	Connect-MsolService -Credential $strCredential
 }
-
 
 #Select Client
 Clear-Host
@@ -52,6 +51,7 @@ $strPassword = ConvertTo-SecureString -String $strCryptString -Key (1..16)
 $strCredential = New-Object System.Management.Automation.PsCredential($strLogon,$strPassword)
 
 #Shell Selection
+Clear-Host
 Write-Host "Selected client: "$strClient
 Write-Host ""
 Write-Host "Exchange Online, Skype Online or Azure AD Shell?"
